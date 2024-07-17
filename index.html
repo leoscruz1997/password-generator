@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gerador de Senhas</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <section id="container">
+                <div id="header">
+                    <img src="imgs/cadeado.png" alt="cadeado" srcset="" />
+                    <h1>Gerar Senha</h1>
+                </div>
+
+                <div id="password-container">
+                    <span class="password"></span>
+                    <button id="copy">
+                        <i class="fa-solid fa-copy"></i>
+                    </button>
+                </div>
+
+                <div class="sliderContainer">
+                    <input
+                        class="slider"
+                        step="1"
+                        type="range"
+                        name="keyRange"
+                        min="1"
+                        max="30"
+                        value="8"
+                    />
+                    <div class="sliderDisplay">8</div>
+                </div>
+                <div class="checkboxConainer">
+                    <div>
+                        <input type="checkbox" name="upper" id="checkUpper" />
+                        <label for="checkUpper"
+                            >Incluir letras maiúsculas</label
+                        >
+                    </div>
+
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="lower"
+                            id="checkLower"
+                            checked
+                        />
+                        <label for="checkLower"
+                            >Incluir letras minúsculas</label
+                        >
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="number" id="checkNumber" />
+                        <label for="checkNumber">Incluir numeros</label>
+                    </div>
+
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="specialCharacters"
+                            id="checkSpecial"
+                        />
+                        <label for="checkSpecial"
+                            >Incluir caracteres especiais</label
+                        >
+                    </div>
+                </div>
+
+                <button class="generateBtn">Generate</button>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
