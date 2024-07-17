@@ -35,9 +35,13 @@ body {
 #header img {
     width: 56px;
 }
-
+main{
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px ;
+}
 #container {
-    width: 550px;
+    width: 100%;
     background-color: var(--color-neutral-1);
     display: flex;
     flex-direction: column;
@@ -47,6 +51,7 @@ body {
     gap: 5px;
 }
 #password-container {
+    padding: 0 12px;
     display: flex;
     align-items: center;
     background-color: var(--primary-color-1);
@@ -56,7 +61,7 @@ body {
 }
 .password {
     flex: 1;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
     white-space: nowrap;
@@ -66,7 +71,7 @@ body {
 #copy {
     color: var(--color-neutral-1);
     border: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
     background: transparent;
     width: 42px;
@@ -82,12 +87,14 @@ body {
     margin-right: 10px;
 }
 .sliderDisplay {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
 }
-.checkboxConainer input {
+.checkboxConainer div{
     cursor: pointer;
+    font-size: .9rem;
 }
+
 .generateBtn {
     margin-top: 10px;
     cursor: pointer;
